@@ -1,0 +1,22 @@
+{
+    "metadata": {
+        "tool": "ThreatSentinel v1.0",
+        "timestamp": "2026-09-21 07:40:47.265776",
+        "target_scanned": "127.0.0.1"
+    },
+    "vulnerability_assessment": {
+        "exposed_ports_count": 0,
+        "exposed_services": []
+    },
+    "log_analysis_incident_response": {
+        "threats_detected_count": 1,
+        "threat_alerts": [
+            {
+                "ip": "192.168.1.50",
+                "type": "Brute-Force",
+                "count": 4
+            }
+        ]
+    },
+    "risk_score": "HIGH"
+}
