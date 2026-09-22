@@ -1,7 +1,6 @@
-import streamlit as st
+import streamlit as st  # pyright: ignore[reportMissingImports]
 import json
 import os
-import pandas as pd
 
 st.set_page_config(page_title="SOC Threat Sentinel Dashboard", layout="wide")
 
@@ -49,8 +48,7 @@ if report_data:
     st.subheader("🔍 Port Exposure Breakdown")
     exposed = report_data["vulnerability_assessment"]["exposed_services"]
     if exposed:
-        df = pd.DataFrame(exposed)
-        st.table(df)
+        st.table(exposed)
     else:
         st.info("All scanned critical ports are SECURE (Closed).")
 
